@@ -1,3 +1,58 @@
+
+.hero-section {
+    background-image: url('Black background.png');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.hero-content {
+    text-align: center;
+}
+.hero-content h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+.hero-content p {
+    font-size: 1.2rem;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+/* li*/
+li {
+    float: left;
+}
+
+li a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    
+}
+
+li a:hover:not(.active){
+    background-color: #111;
+}
+.active {
+    background-color: #04AA6D;
+}
+
+/*
 .heading {
 background: lightblue;
 position: center;
@@ -37,3 +92,4 @@ p {
     display: block;
     font-size: 20px;
 }
+*/
