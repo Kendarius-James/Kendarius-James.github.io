@@ -5,53 +5,219 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Me</title>
-    <link rel="stylesheet" href="style.css"> <!-- Link your CSS file here -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 </head>
   
 <header>
-  <nav>
-    <ul>
-        <!-- Your navigation menu here -->
-        <li><a class="active" href="">About Me</a></li>
-        <li><a href="">Projects</a></li>
-        <li><a href="">Contact</a></li>
+  <nav id="navbar-example2" class="navbar fixed-top bg-body-tertiary px-3 mb-3">
+    <a class="navbar-brand" href="#">Navbar</a>
+    
+    <ul class="nav nav-pills">
+      <li class="nav-item">
+        <a class="nav-link" href="#scrollspyHeading1">Intro</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#scrollspyHeading2">Education</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#scrollspyHeading3">Experience</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#scrollspyHeading4">Skills</a>
+      </li>
     </ul>
   </nav>
+  <!--
+  <nav>
+    <ul class="nav-head">
+        <li class="nav-element"><a class="active" href="">About Me</a></li>
+        <li class="nav-element"><a href="">Projects</a></li>
+        <li class="nav-element"><a href="">Contact</a></li>
+    </ul>
+  </nav>
+-->
 </header>
-
-  <body>
-    <main>
-        <section id="overview_page">
-            <!-- <img src="Black background.png"> -->
-        </section>
-
-      <section class="hero-section">
+<body>
+  <main>
+    <div class="hero-section">
         <div class="hero-content">
             <h1>About Me</h1>
             <p>Man with dreams</p>
         </div>
+    </div>
+    
+    <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" class="scrollspy-example bg-body-tertiary p-3 rounded-2" tabindex="0">
+      <section id="scrollspyHeading1">
+        <h2>Hello, My Name is Kendarius James</h2>
+        <h3>A recent Computer Science graduate from Mississippi State University.</h3>
+        <p>I am passionate about problem-solving, thinking critically, and embracing new challenges. I primarily use C++ and Python; however, I am also familiar with other languages. As I embark on the next chapter of my career, I am eager to continue to grow and develop my skills.</p>
+        <br>
       </section>
-  
-      <section id="summary">
-        <h2>Summary</h2>
-        <p>Write a concise summary highlighting your background, skills, and interests. Keep it engaging and relevant to your career field.</p>
+      <br>
+      <hr>
+      <section id="scrollspyHeading2">
+        <h2 class="top-heading">Education</h2>
+            <h3>Mississippi State University      <span class="right-side">August 2019 - May 2023</span></h3>
+            <p>Degree: Bachelor</p>
+            <p>Major: Computer Science</p>
+            <p>Concentration: Human & Visual Computing</p>
       </section>
-  
-      <section id="education">
-        <h2>Education</h2>
+
+      <br>
+      <hr>
+      <section id="scrollspyHeading3">
+        <h2 class="top-heading">Experience</h2>
+        
+        <h2>Projects</h2>
         <ul>
-          <li>
-            <h3>University Name</h3>
-            <p>Degree: Your degree</p>
-            <p>Major: Your major</p>
-            <p>Graduation Year: YYYY</p>
-          </li>
-          <!-- Add more education details if applicable -->
+          <div>
+            <h3>GitHub Webpage
+              <a class="bi bi-github link-dark link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="https://github.com/">
+              </a>
+              <span class="right-side">May 2023</span>
+            </h3>
+            <p>Created a GitHub page to showcase past projects.</p>
+            <span class="skill">Chat-GTP</span>
+            <span class="skill">HTML</span>
+            <span class="skill">CSS</span>
+            <span class="skill">Bootstrap</span>
+          </div>
+          
+          <br>
+          <div>
+          <h3>Intro to Software Engineering
+            <a class="bi bi-github link-dark link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="https://github.com/">
+            </a>
+            <span class="right-side">Janurary - May 2023</span>
+          </h3>
+          <p>Designed an e-commerce website with Django</p>
+          <span class="skill">Python</span>
+          <span class="skill">Django</span>
+          <span class="skill">HTML</span>
+          <span class="skill">Javascript</span>
+        </div>
+          <br>
+
+        <div>
+          <h3>Theory and Implementation of Programming Languages
+            <span class="right-side">Janurary - May 2023</span>
+          </h3>
+          <p>Created a interpreter based on the chips programming language.</p>
+          <span class="skill">C++</span>
+          <span class="skill">WSL</span>
+          <span class="skill">Visual Studio Code</span>
+        </div>
+          <br>
+
+        <div>
+          <h3>Artificial Intelligence
+            <span class="right-side">Janurary - May 2023</span>
+          </h3>
+          <p>Created a battlesnake for a inclass competition</p>
+          <span class="skill">Python</span>
+          <span class="skill">Site name</span>
+          <span class="skill">Google Colab</span>
+        </div>
+          <br>
+
+        <div>
+          <h3>AI Robotics
+            <span class="right-side">August - December 2022</span>
+          </h3>
+          <p>Used stuff</p>
+          <span class="skill">Python</span>
+          <span class="skill">ROS</span>
+          <span class="skill">Virtual Box - Ubuntu Linux</span>
+        </div>
+          <br>
+        <div>
+          <h3>Database Management Systems
+            <span class="right-side">August - December 2022</span>
+          </h3>
+          <p>Used stuff</p>
+          <span class="skill">Microsoft SQL Server</span>
+          </div>
+          <br>
+          <div>
+            <h3>Game Design
+              <span class="right-side">Janurary - May 2022</span>
+            </h3>
+            <p>Used Stuff</p>
+            <span class="skill">Unity</span>
+            <span class="skill">C#</span>
+          </div>
+          <br>
+          <div>
+            <h3>Computer Organization
+              <span class="right-side">Janurary - May 2022</span>
+            </h3>
+            <p>Used Stuff</p>
+            <span class="skill">Visual Studio Code</span>
+            <span class="skill">C++</span>
+          </div>
+          <br>
+          <div>
+            <h3>Human-Computer Interaction
+              <span class="right-side">August - December 2021</span>
+            </h3>
+            <p>Used Stuff</p>
+            <span class="skill">Figma</span>
+          </div>
+          <br>
+
+          <div>
+            <h3>Systems Programming
+              <span class="right-side">August - December 2021</span>
+            </h3>
+            <p>Used Stuff</p>
+            <span class="skill">Orcale VM Virtual Box</span>
+            <span class="skill">Ubuntu Linux</span>
+            <span class="skill">Emacs</span>
+            <span class="skill">C</span>
+          </div>
+          <br>
+
+          <div>
+            <h3> Methods and Tools in Software Development
+              <span class="right-side">August - December 2021</span>
+            </h3>
+            <p>Used Stuff</p>
+            <span class="skill">Visual Studio</span>
+            <span class="skill">C++</span>
+          </div>
+          <br>
+          <div>
+            <h3>Data Structures and Analysis of Algorithms
+              <span class="right-side">Janurary - May 2021</span>
+            </h3>
+            <p>Used Stuff</p>
+            <span class="skill">Visual Studio</span>
+            <span class="skill">C++</span>
+          </div>
+          <br>
+          <div>
+            <h3>Intermediate Computer Programming
+              <span class="right-side">August - December 2020</span>
+            </h3>
+            <p>Used Stuff</p>
+            <span class="skill">Visual Studio</span>
+            <span class="skill">C++</span>
+          </div>
+          <br>
+          <div>
+            <h3>Intro to Computer Programming
+              <span class="right-side">Janurary - May 2020</span>
+            </h3>
+            <p>Used Stuff</p>
+            <span class="skill">Jetbrains IDE</span>
+            <span class="skill">Python</span>
+          </div>
+          <br>
         </ul>
-      </section>
-  
-      <section id="experience">
-        <h2>Experience</h2>
+
         <ul>
           <li>
             <h3>Company Name</h3>
@@ -67,8 +233,11 @@
         </ul>
       </section>
   
-      <section id="skills">
-        <h2>Skills</h2>
+      <br>
+      <hr>
+
+      <section id="scrollspyHeading4">
+        <h2 class="top-heading">Skills</h2>
         <ul>
           <li>Skill 1</li>
           <li>Skill 2</li>
@@ -76,11 +245,17 @@
           <!-- Add more skills -->
         </ul>
       </section>
+    
+    </div>
     </main>
   
     <footer>
       <p>&copy; 2023 Your Website. All rights reserved.</p>
     </footer>
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="Function.js"></script> 
+    <script src="js/bootstrap.min.js"></script>
   </body>
   
   </html>
