@@ -1,4 +1,9 @@
 function scrollToSection(targetId) {
+  const screenWidth = window.innerWidth;
+  /* let offset = 100;
+  if (screenWidth < 388){
+    offset = 30;
+  } */
   const offset = 100;
   const targetElement = document.querySelector(targetId);
   const targetPosition = targetElement.offsetTop - offset;
