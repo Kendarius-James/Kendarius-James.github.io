@@ -1,12 +1,13 @@
 .hero-section {
-    background-image: url('Ocean\ Background.jpg');
+    background-image: url('White\ Desk\ Background.jpg');
+    /* background-image: url('Ocean\ Background.jpg'); */
     background-size: cover;
     background-position: center;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #fff;
+    color: #0a0909;
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
@@ -37,7 +38,7 @@
     border-style: solid;
     border-width: 2px;
     border-radius: 5px;
-    background-color: lightsteelblue;
+    background-color: rgb(227, 239, 255);
 }
 .Icon {
     display: inline-block;
@@ -72,7 +73,36 @@
     background-color: #d3cece;
 
 }
-
+/* Color of the main title  */
+.navbar-brand {
+    color: white;
+}
+/* .navbar-brand:hover {
+    color: lightblue;
+}
+ */.nav-link {
+    color: white;
+}
+.btn-bd-primary {
+    background-color:rgb(95, 201, 121);
+}
+.btn-bd-primary:hover {
+    background-color:rgb(138, 226, 160);
+}
+.ident {
+    padding-left: 2px;
+    font-size: 12px;
+}
+.card-text {
+    padding-bottom: 12px;
+}
+.card-footer {
+    background-color: white;
+}
+/* .nav-link:hover {
+    color: lightblue;
+}
+ */
 @media (max-width: 319px){
     .top-heading {
         font-size: 20px;
@@ -184,6 +214,12 @@
     }
 }
 
+footer {
+    background-color: #333333;
+    color: white;
+    /* padding: 10%; */
+}
+
 html {
     font-size: 16px;
 }
@@ -207,8 +243,8 @@ section {
     background-color: rgb(201, 194, 194);
     box-shadow: 3px 3px 2px #575454;
     border-radius: 10px;
+    margin: 20px;
 }
-
 body{
     background-color: #d3cece;
     padding: 0;
