@@ -111,7 +111,7 @@
 .footer-column1, .footer-column2 {
     margin-left: 80px;
     margin-right: 80px;
-    padding-bottom: 200px;
+    /* padding-bottom: 30px; */
 }
 .reference {
     list-style-type: none;
@@ -120,6 +120,19 @@
 .media {
     padding: 5px;
 }
+.section-border {
+    margin: 10px;
+}
+.carousel-control-next, .carousel-control-prev, .carousel-control-color {
+    color: red;
+}
+.cite {
+    background-color: white;
+    opacity: 60%;
+}
+/* .carousel-control-color {
+    color: red;
+} */
 
 /* .nav-link:hover {
     color: lightblue;
@@ -137,11 +150,11 @@
     h2 {
         font-size: 14px;
     }
-    h3, li {
+    h3 {
         /* font-size: calc(1vm + 0.5rem); */
         font-size: 12px;
     }
-    p {
+    p, .reference, .course {
         /* font-size: calc(.5vm + 0.3rem); */
         font-size: 10px;
     }
@@ -173,7 +186,7 @@
         /* font-size: calc(1vm + 0.5rem); */
         font-size: 16px;
     }
-    p {
+    p, .reference, .course {
         /* font-size: calc(.5vm + 0.3rem); */
         font-size: 12px;
     }
@@ -200,7 +213,7 @@
         /* font-size: calc(1vm + 1.0rem); */
         font-size: 20px;
     }
-    p {
+    p, .reference, .course {
         /* font-size: calc(.5vm + 0.8rem); */
         font-size: 16px;
     }
@@ -227,7 +240,7 @@
         /* font-size: calc(1vm + 1.2rem); */
         font-size: 22px;
     }
-    p {
+    p, .reference, .course {
         /* font-size: calc(1vm + 1rem); */
         font-size: 18px;
     }
@@ -254,7 +267,7 @@
         /*font-size: calc(1vm + 1.5rem);*/
         font-size: 24px;
     }
-    p {
+    p, .reference, .course {
         /* font-size: calc(1vm + 1.3rem); */
         font-size: 20px;
     }
@@ -288,6 +301,9 @@ p, h3 {
     margin: 10px;
     margin-left: 40px;
     margin-right: 20px;
+}
+a {
+    text-align: right;
 }
 /* .profile_description {
     margin-bottom: 50px;
