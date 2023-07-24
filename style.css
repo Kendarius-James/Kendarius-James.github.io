@@ -55,10 +55,10 @@
 .progress {
     height: 1.5rem;
     background-color: white;
-}
-.progress {
     box-shadow: 3px 3px 2px #575454;
+    margin-bottom: 6px;
 }
+
 .scrollspy {
     margin: 6px;
     padding: 2px;
@@ -117,6 +117,11 @@
 }
 .education {
     font-style: italic;
+}
+.scale {
+    margin-right: 10px;
+    margin-top: 10px;
+    display: inline-block;
 }
 /* smallest screens */
 @media (max-width: 319px){
