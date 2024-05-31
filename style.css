@@ -109,7 +109,7 @@
     margin: 10px;
 }
 .carousel-control-next, .carousel-control-prev, .carousel-control-color {
-    color: red;
+    color: black;
 }
 .cite {
     background-color: white;
@@ -287,7 +287,11 @@ p, h3 {
     margin-left: 40px;
     margin-right: 20px;
 }
+a:hover {
+    color: #D5E7FF;
+}
 a {
+    color: #A2C4F1;
     text-align: right;
 }
 ul {
