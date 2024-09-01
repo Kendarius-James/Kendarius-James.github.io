@@ -1,0 +1,157 @@
+:root {
+    /* #1e1e1e */
+    --bg-drop-down-dark: #353535;
+    --bg-dark: #1A1A1A;
+}
+
+
+/* Heading for forms */
+
+
+/* Headers for section titles*/
+.hero-main-title {
+    margin: 10px 0px 10px 10px;
+    text-shadow: 0 0 2px white;
+}
+
+.content-heading {
+    margin: 10px 0px 5px 20px;
+}
+
+/* Project Content */
+.select-container {
+    display: inline-block;
+    /* float: left; */
+}
+.select-container select {
+    width: 200px;
+    height: 30px;
+}
+.form-container {
+    float: right;
+    margin-right: 4%; 
+}
+.form-container input {
+    width: 200px;
+    height: 30px;
+    margin-left: 3px;
+}
+.form-container button {
+    width: 80px;
+    height: 30px;
+}
+
+/* Input Styles */
+.drop-down-dark {
+    background-color: var(--bg-drop-down-dark);
+    color: var(--color-light);
+    border: none;
+}
+.drop-down-dark:focus {
+    box-shadow:  0 0 10px rgba(255, 255, 255, 0.8);
+}
+.drop-down-light {
+    background-color: var(--color-light);
+    border-radius: 4px;
+}
+.drop-down-light:focus {
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.5);
+}
+.input-dark {
+    background-color: var(--bg-drop-down-dark);
+    color: var(--color-light);
+    border: none;
+}
+.input-dark:focus {
+    box-shadow:  0 0 15px rgba(255, 255, 255, 0.8);
+}
+.input-light {
+    background-color: var(--color-light);
+    border-radius: 4px;
+}
+.input-light:focus {
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+/* Card styles */
+.card-background-dark {
+    background-color: var(--skill-bg-dark);
+}
+.card-background-light {
+    background-color: var(--bg-dark);
+    color: var(--color-light);
+}
+
+.card {
+    width: 300px;
+    height: 450px;
+    margin: 15px 10px;
+    transition: width 0.5s ease, height 0.3s ease, margin 0.3s ease;
+}
+.card:hover {
+    width: 300px;
+    height: 460px;
+    margin: 0px 10px;    
+}
+
+@media (prefers-reduced-motion) {
+    .card:hover {
+        width: 300px;
+        height: 450px;
+        margin: 15px 10px;
+    }
+}
+.card-container #workContainer, .card-container #personalContainer, .card-container #courseContainer{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: 5px 10px;
+}
+
+.card-year, .card-description {
+    margin: 5px 0px;
+    font-weight: lighter;
+}
+.card-year {
+    margin: 10px 0px;
+}
+.card-body .content-heading {
+    margin-left: 0px;
+}
+.card-body {
+    margin: 20px;
+}
+.card img {
+    width: 100%;
+    height: 55%;
+    /* width: 300px; */
+    /* height: 300px; */
+}
+
+.filter-container label {
+    margin: 0px 10px 0px 20px;
+}
+
+@media screen and (min-width: 0px ) and (max-width: 520px) {
+    .card-container #workContainer, .card-container #personalContainer, .card-container #courseContainer {
+        justify-content: center;
+    }
+}
+@media screen and (min-width: 0px) and (max-width: 795px){
+    .filter-container {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin-top: 10px;
+    }
+    .select-container {
+        margin: 10px 0px;
+    }
+    
+}
+@media screen and (min-width: 0px) and (max-width: 416px){
+    form button {
+        margin-left: 40%;
+        margin-top: 10px;
+    }
+}

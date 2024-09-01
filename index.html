@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, intital-scale=1.0">
+    <meta name="description" content="Kendarius's GitHub page for dynamic coding projects for curious and innovative individuals">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link href="styles/global.css" rel="stylesheet">
+    <link href="styles/about.css" rel="stylesheet">
+    <script src="scripts/theme.js" defer></script>
+    <title>Home: About Me</title>
+</head>
+
+<body class="body-dark body-format montserrat-theme-font" id="transition">
+    <!-- div stops the top button -->
+    <div>
+        <a href="#body-content" class="skip-link skip-link-dark">Skip to Main Content</a>
+        <nav class="nav-fonts nav-color-dark" id="navTop">
+
+            <!-- desktop-nav-view" id="desktopView" -->
+            <div class="desktop-nav-view">
+                <a href="index.html" class="nav-item theme-dark nav-hover-dark">About Me</a>
+                <a href="../pages/projects.html" class="nav-item link-visited-dark nav-hover-dark">Projects</a>
+                <!-- <a class="nav-item link-visited-dark nav-hover-dark">Repositiories</a> -->
+                <!-- <a class="nav-item link-visited-dark nav-hover-dark">Resume</a> -->
+                <!-- <a class="nav-item link-visited-dark nav-hover-dark">Blog</a> -->
+                <button aria-label="Toggle light or dark mode"
+                    class="nav-color-dark nav-hover-dark changeThemeButton changeThemeButton-dark" id="changeTheme">
+                    <img src="../images/icons/sun.svg" width="20" height="20" alt="sun to toggle dark mode"
+                        class="hide-image">
+                </button>
+            </div>
+
+            <div class="nav-fonts nav-color-dark mobile-nav-view">
+                <button aria-label="Toggle drop down menu" class="drop-down-icon drop-down-icon-dark mobile-hidden"
+                    id="dropDown">
+                    <img src="../images/icons/bars-solid-light.svg" width="27.5" hieght="30"
+                        alt="bars for dropdown menu" id="barLight">
+                    <img src="../images/icons/bars-solid-dark.svg" width="27.5" height="30" alt="bars for dropdown menu"
+                        class="hidden" id="barDark">
+                </button>
+            </div>
+        </nav>
+
+        <!-- mobile dropdown -->
+        <div class="overlay overlay-dark nav-fonts-overlay nav-color-dark mobile-nav-hidden transition" id="mobileNav">
+            <div>
+                <div class="options-overlay">
+                    <button aria-label="Toogle light mode"
+                        class="nav-color-dark nav-hover-dark changeThemeButton changeThemeButton-dark transition"
+                        id="changeThemeMobile"></button>
+                    <button aria-label="Toggle drop down menu" class="drop-down-icon drop-down-icon-dark transition"
+                        id="dropDown">
+                        <img src="../images/icons/bars-solid-light.svg" width="27.5" height="30"
+                            alt="bars for dropdown menu" id="barLight">
+                        <img src="../images/icons/bars-solid-dark.svg" widht="27.5" height="30"
+                            alt="bars for dropdown menu" class="hidden" id="barDark">
+                    </button>
+                </div>
+
+                <div class="overlay-container">
+                    <a href="index.html" class="nav-item theme-dark nav-hover-dark">About Me</a>
+                    <a href="../pages/projects.html" class="nav-item link-visited-dark nav-hover-dark">Projects</a>
+                    <!-- <a class="nav-item link-visited-dark nav-hover-dark">Repositories</a> -->
+                    <!-- <a class="nav-item link-visited-dark nav-hover-dark">Resume</a> -->
+                    <!-- <a class="nav-item link-visited-dark nav-hover-dark">Blog</a> -->
+                </div>
+            </div>
+        </div>
+
+        <hr class="hero-dark transition">
+        <!-- Alert for users with big screens -->
+        <p class="big-screen-alert big-screen-alert-dark transition hidden">Your screen size is too big. Some features
+            may not function
+            as intended.</p>
+
+        <!-- Body Content -->
+        <button class="top-arrow-dark top-arrow-properties body-dark" aria-label="Jump to top of page?"
+            id="scrollButton"></button>
+
+        <div class="hero-container hero-dark transition" id="body-content">
+            <div class="hero-subcontainer">
+                <h3 class="hero-intro-title theme-dark">Hello, my name is</h3>
+                <h1 class="hero-main-title">Kendarius James</h1>
+                <h2 class="hero-sub-title">Aspiring Software Developer</h2>
+                <h2 class="hero-sub-title hero-sub-title-reflection-dark" aria-hidden="true">Aspiring Software Developer
+                </h2>
+            </div>
+            <div class="circle-container">
+                <div class="circle1 circle circle1-dark-theme"></div>
+                <div class="circle2 circle circle2-dark-theme"></div>
+            </div>
+        </div>
+
+        <!-- About Me Section -->
+        <h2 class="content-heading theme-dark">About Me</h2>
+        <hr class="section-divider section-divider-dark">
+        <div class="about-container">
+            <p class="about-content-body content-body display-dark">
+                I am a passionate developer located in the United States. One of my childhood dreams was to create
+                experiences that engage people's creativity. This dream led me into the field of computer science,
+                where I construct impactful software solutions that tackle everyday problems encountered by many people.
+                Besides creating software, I unwind by watching videos, playing video games, and reading inspirational
+                books.
+            </p>
+            <!-- <figure>
+                <img class="about-image" src="../images/profile/placeholder_image.jpg"
+                    alt="Image of desk with laptop on it" width="400px" height="400px" loading="lazy">
+                <figcaption>
+                    Image by
+                </figcaption>
+            </figure> -->
+        </div>
+
+        <!-- Projects Section -->
+        <div>
+            <h2 class="content-heading theme-dark">Projects</h2>
+            <!-- 2024 start -->
+            <hr class="section-divider section-divider-dark">
+            <h3 class="project-year hero-sub-title project-color-dark">2024</h3>
+            <!-- Copy Here For New Entry -->
+            <!-- <div class="project-container">
+                <div class="project-visuals">
+                    <img class="about-image" src="../images/profile/placeholder_image.jpg" width="400px" height="400px" loading="lazy">
+                    <h3 class="technology-header hero-sub-title project-sub-title">Technologies Used</h3>
+                    <div class="content-body technology-section">
+                        <div>
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-plain.svg" />
+                            <h4>technology 1</h4>
+                        </div>
+                        <div>
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-plain.svg" />
+                            <h4>technology 1</h4>
+                        </div>
+                        <div>
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-plain.svg" />
+                            <h4>technology 1</h4>
+                        </div>
+                    </div>
+
+                </div> 
+        
+                <div class="project-description">
+                    <div class="project-heading">
+                        <h3 class="project-title content-heading">
+                            <a class="theme-dark" href="pages/projects/template.html">Title Here</a>
+                        </h3>
+                        <h3 class="project-subtitle project-date content-heading">Month - Month</h3>
+                    </div>
+
+                    <p class="project-content-body content-body">Lorem ipsum dolor sit amet, consectetur adipiscing
+                        elit. In imperdiet erat quis augue imperdiet consequat.
+                    </p>
+                    <ul class="project-content-body content-body">
+                        <li class="content-body">Lorem ipsum dolor sit amet, consectetur adipiscing
+                        elit. In imperdiet erat quis augue imperdiet consequat.
+                        </li>
+                        <li class="content-body">Lorem ipsum dolor sit amet, consectetur adipiscing
+                        elit. In imperdiet erat quis augue imperdiet consequat.
+                        </li>
+                    </ul>
+                </div>
+            </div>-->
+            <div class="project-container">
+                <div class="project-visuals">
+                    <img class="about-image" src="../images/projects/github_page_update.png" alt="Hero section of a dark background of the github home page." width="400px"
+                        height="400px" loading="lazy">
+                    <h3 class="hero-sub-title technology-header project-sub-title">Technologies Used</h3>
+                    <div class="content-body technology-section">
+                        <div>
+                            <img
+                                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-plain.svg" alt="An orange HTML logo of a shield with the number 5 inside of it."/>
+                            <h4>HTML</h4>
+                        </div>
+                        <div>
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-plain.svg" alt="A blue CSS logo of a shield wit a backwards E inside of it."/>
+                            <h4>CSS</h4>
+                        </div>
+                        <div>
+                            <img
+                                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-plain.svg" alt="A Yellow JavaScript logo of a square with the letters J and S in the bottom right side of it."/>
+                            <h4>JavaScript</h4>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-description">
+                    <div class="project-heading">
+                        <h3 class="project-title content-heading">
+                            <a class="theme-dark" href="pages/projects/github-page-update.html">GitHub Page Update</a>
+                        </h3>
+                        <h3 class="project-subtitle project-date content-heading">May - August</h3>
+                    </div>
+
+                    <p class="project-content-body content-body">Brainstormed and redesigned my GitHub page to reflect a
+                        portfolio-style website showcasing my past and future coding projects.
+                        The focus is on providing a simple, modern interface that can be expanded upon in the upcoming
+                        years.
+                    </p>
+                    <ul class="project-content-body content-body">
+                        <li class="content-body">Designed with accessibility in mind, features a light and dark mode for
+                            user preference.
+                            Users can search and sort projects based off date, technology used, category, and field.
+                        </li>
+                        <li class="content-body">The site is designed to be built upon over time, providing a flexible
+                            way to display projects both on GitHub and elsewhere.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- 2023 Start -->
+            <hr class="project-separator">
+            <h3 class="project-year hero-sub-title project-color-dark">2023</h3>
+            <div class="project-container">
+                <div class="project-visuals">
+                    <img class="about-image" src="../images/projects/netdeals/net_deals_01.jpg" alt="White dashboard of an e-commerce store filled with dogs and cats." width="400px" height="400px" loading="lazy">
+
+                    <h3 class="technology-header hero-sub-title project-sub-title">Technologies Used</h3>
+                    <div class="content-body technology-section">
+                        <div>
+                            <a href="https://www.djangoproject.com/" alt="Visit Django Project Website">
+                                <img class="technology-background" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/django/django-plain-wordmark.svg" alt="A white icon that says django."/>
+                            </a>
+                            
+                            <h4 class="technology-padding skill-element">Django Framework</h4>
+                        </div>
+                        <div>
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" alt="Python logo with a blue and yellow snake shaped in a plus." />
+                            <h4>Python</h4>
+                        </div>
+                        <div>
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-plain.svg" alt="An orange HTML logo of a shield with the number 5 inside of it."/>
+                            <h4>HTML</h4>
+                        </div>
+                        <div>
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-plain.svg" alt="A Yellow JavaScript logo of a square with the letters J and S in the bottom right side of it."/>
+                            <h4>JavaScript</h4>
+                        </div>
+                    </div>
+                </div> 
+        
+                <div class="project-description">
+                    <div class="project-heading">
+                        <h3 class="project-title content-heading">
+                            <a class="theme-dark" href="pages/projects/net-deals.html">Net Deals</a>
+                        </h3>
+                        <h3 class="project-subtitle project-date content-heading">Janurary - May</h3>
+                    </div>
+
+                    <p class="project-content-body content-body">Created an e-commerce web application with the Django framework in a 3-person team while applying the Agile development life cycle in my Intro to Software Engineering course.
+                    </p>
+                    <ul class="project-content-body content-body">
+                        <li class="content-body">Project contains standard functionality such as creating accounts for buyers, sellers, and admin users, creating and adding product listings to user's shopping cart, and tracking product inventory for the seller accounts.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- 2022 Start -->
+            <hr class="project-separator">
+            <h3 class="project-year hero-sub-title project-color-dark">2022</h3>
+            <div class="project-container">
+                <div class="project-visuals">
+                    <img class="about-image" src="/images/projects/dog-recognition/Image_Recognition.jpg" alt="A grayed out image of a bull dog with a red bounding box around it." width="400px" height="400px"
+                        loading="lazy">
+                    <div class="content-body technology-section">
+                        <div>
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" alt="Python logo with a blue and yellow snake shaped in a plus."/>
+                            <h4>Python</h4>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-description">
+                    <div class="project-heading">
+                        <h3 class="project-title content-heading">
+                            <a class="theme-dark" href="/pages/projects/dog-recognition.html">Dog Recognition Algorithm</a>
+                        </h3>
+                        <h3 class="project-subtitle project-date content-heading">November - December</h3>
+                    </div>
+
+                    <p class="project-content-body content-body"> Developed a dog recognition algorithm that detects dogs in images during my AI Robotics course. The algorithm separates the foreground from the background, applies binary thresholding, and computes a bounding box when the number of white pixels falls within a certain range. 
+                    </p>
+                    <ul class="project-content-body content-body">
+                        <li class="content-body">The algorithm recognize and compute bounding boxes of dogs for different image sizes, formats, and layouts.
+                        </li>
+                        <li class="content-body">Have an accuracy rate of around 95% when detecting dogs in each image supplied.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="project-color-dark hero-sub-title project-button project-button-dark">
+                <a class="link-visited-dark nav-hover-dark" href="/pages/projects.html">See More Projects</a>
+            </div>
+        </div>
+
+        <!-- Skills Section -->
+        <h2 class="content-heading theme-dark">Skills</h2>
+        <hr class="section-divider section-divider-dark">
+
+        <div class="skills">
+            <div class="proficiency-container content-body">
+                <h3 class="theme-dark content-heading">Proficient</h3>
+                <div class="skill-container">
+                    <div class="skill-dark skill-element">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" alt="Python logo with a blue and yellow snake shaped in a plus."/>
+                        <h4>Python</h4>
+                    </div>
+                    <div class="skill-dark skill-element">
+                        <img
+                            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg" alt="C++ logo of a blue hexigon with the letter C++."/>
+                        <h4>C++</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="proficiency-container content-body">
+                <h3 class="theme-dark content-heading">Intermediate</h3>
+                <div class="skill-container">
+                    <div class="skill-dark skill-element">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-plain.svg" alt="An orange HTML logo of a shield with the number 5 inside of it."/>
+                        <h4>HTML</h4>
+                    </div>
+                    <div class="skill-dark skill-element">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-plain.svg" alt="A blue CSS logo of a shield wit a backwards E inside of it."/>
+                        <h4>CSS</h4>
+                    </div>
+                    <div class="skill-dark skill-element">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-plain.svg" alt="A Yellow JavaScript logo of a square with the letters J and S in the bottom right side of it."/>
+                        <h4>JavaScript</h4>
+                    </div>
+                    <div class="skill-dark skill-element">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg" alt="A purple C# icon of a hexigon with the C# charaters inside."/>
+                        <h4>C#</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Socials -->
+        <h2 class="content-heading theme-dark">Follow Me</h2>
+        <hr class="section-divider section-divider-dark">
+        <div class="social-container">
+            <div class="skill-dark social-element">
+                <a class="social-icon linkedin-icon-dark" href="https://www.linkedin.com/in/kendarius-james/"></a>
+            </div>
+            <div class="skill-dark social-element">
+                <a class="social-icon github-icon-dark" href="https://github.com/Kendarius-James"></a>
+            </div>
+        </div>
+
+        <div class="disclaimer">
+            <p>The use of programming languages, organizational, and technology logos on this site is solely for demonstrating the relevant technologies and complies with the respective brand guidelines. The organizations referenced do not affiliate with, sponsor, or endorse any content, project, or application on this site.</p>
+        </div>
+
+        <!-- Footer Content -->
+    </div>
+    <hr>
+    <footer class="footer-text-color">
+        <div class="footer-container">
+            <div class="footer-column">
+                <h3 class="footer-title display-dark">Resources</h3>
+                <ul class="display-dark footer-element">
+                    <li>Social Media Icons by font awesome</li>
+                    <li>Technology Icons by devicon</li>
+                    <li>Hosted with Github Pages</li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h3 class="footer-title display-dark">Social Media</h3>
+                <a class="footer-icon footer-linkedin-icon-dark"
+                    href="https://www.linkedin.com/in/kendarius-james/"></a>
+                <a class="footer-icon footer-github-icon-dark" href="https://github.com/Kendarius-James"></a>
+            </div>
+        </div>
+
+        <p class="copyright display-dark">@2024 Kendarius James</p>
+    </footer>
+</body>
+
+</html>

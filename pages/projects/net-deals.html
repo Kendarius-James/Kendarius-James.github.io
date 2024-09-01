@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, intital-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link href="/styles/global.css" rel="stylesheet">
+    <!-- Add new css document here -->
+    <link href="/styles/project-display.css" rel="stylesheet">
+    <script src="/scripts/theme.js" defer></script>
+
+    <title>Project: Net Deals</title>
+</head>
+
+<body class="body-dark body-format montserrat-theme-font transition" id="transition">
+    <div>
+        <a href="#body-content" class="skip-link skip-link-dark">Skip to Main Content</a>
+        <nav class="nav-fonts nav-color-dark" id="navTop">
+
+            <!-- desktop view -->
+            <div class="desktop-nav-view">
+                <!-- remove link-visited-dark to highlight current tab -->
+                <a href="../../index.html" class="nav-item link-visited-dark nav-hover-dark">About Me</a>
+                <a href="../../pages/projects.html" class="nav-item nav-hover-dark theme-dark">Projects</a>
+                <!-- <a class="nav-item link-visited-dark nav-hover-dark">Repositiories</a> -->
+                <!-- <a class="nav-item link-visited-dark nav-hover-dark">Resume</a> -->
+                <!-- <a class="nav-item link-visited-dark nav-hover-dark">Blog</a> -->
+                <button aria-label="Toggle light or dark mode"
+                    class="nav-color-dark nav-hover-dark changeThemeButton changeThemeButton-dark" id="changeTheme">
+                    <img src="../../images/icons/sun.svg" width="20" height="20" alt="sun to toggle dark mode"
+                        class="hide-image">
+                </button>
+            </div>
+
+            <div class="nav-fonts nav-color-dark mobile-nav-view">
+                <button aria-label="Toggle drop down menu" class="drop-down-icon drop-down-icon-dark mobile-hidden"
+                    id="dropDown">
+                    <img src="../../images/icons/bars-solid-light.svg" width="27.5" hieght="30"
+                        alt="bars for dropdown menu" id="barLight">
+                    <img src="../../images/icons/bars-solid-dark.svg" width="27.5" height="30"
+                        alt="bars for dropdown menu" class="hidden" id="barDark">
+                </button>
+            </div>
+        </nav>
+
+        <!-- mobile dropdown -->
+        <div class="overlay overlay-dark nav-fonts-overlay nav-color-dark mobile-nav-hidden transition" id="mobileNav">
+            <div>
+                <div class="options-overlay">
+                    <button aria-label="Toogle light mode"
+                        class="nav-color-dark nav-hover-dark changeThemeButton changeThemeButton-dark"
+                        id="changeThemeMobile"></button>
+                    <button aria-label="Toggle drop down menu" class="drop-down-icon drop-down-icon-dark" id="dropDown">
+                        <img src="../../images/icons/bars-solid-light.svg" width="27.5" height="30"
+                            alt="bars for dropdown menu" id="barLight">
+                        <img src="../../images/icons/bars-solid-dark.svg" widht="27.5" height="30"
+                            alt="bars for dropdown menu" class="hidden" id="barDark">
+                    </button>
+                </div>
+
+                <div class="overlay-container">
+                    <a href="../../index.html" class="nav-item link-visited-dark nav-hover-dark">About Me</a>
+                    <a href="../../pages/projects.html" class="nav-item nav-hover-dark theme-dark">Projects</a>
+                    <!-- <a class="nav-item link-visited-dark nav-hover-dark">Repositiories</a> -->
+                    <!-- <a class="nav-item link-visited-dark nav-hover-dark">Resume</a> -->
+                    <!-- <a class="nav-item link-visited-dark nav-hover-dark">Blog</a> -->
+                </div>
+            </div>
+        </div>
+        <hr>
+        <!-- Alert for users with big screens -->
+        <p class="big-screen-alert big-screen-alert-dark transition hidden">Your screen size is too big. Some features
+            may not function
+            as intended.</p>
+
+        <!-- Body Content -->
+        <div id="body-content">
+            <button class="top-arrow-dark top-arrow-properties body-dark" aria-label="Jump to top of page?"
+                id="scrollButton"></button>
+
+            <!-- Page classes does not transfer between pages -->
+            <div>
+                <div class="title-container">
+                    <h1 class="hero-main-title">Net Deals</h1>
+                    <h2 class="hero-sub-title theme-dark">Janurary 2023 - May 2023</h2>
+                </div>
+                <div class="project-body">
+                    <div class="">
+                        <div class=" project-hero">
+                            <img class="hero-project-image" src="../../images/projects/netdeals/net_deals_01.jpg"
+                                alt="White dashboard of an e-commerce store filled with dogs and cats.">
+                            <h3 class="hero-sub-title project-sub-title">Technologies Used</h3>
+                            <div class="technology-section content-body">
+                                <div>
+                                    <a href="https://www.djangoproject.com/" alt="Visit Django Project Website">
+                                        <img class="technology-background"
+                                            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/django/django-plain-wordmark.svg" alt="A white Django icon with the letters Django."/>
+                                    </a>
+                                    <h4 class="technology-padding">Django Framework</h4>
+                                </div>
+                                <div>
+                                    <img
+                                        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" alt="Python logo with a blue and yellow snake shaped in a plus."/>
+                                    <h4>Python</h4>
+                                </div>
+                                <div>
+                                    <img
+                                        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-plain.svg" alt="An orange HTML logo of a shield with the number 5 inside of it."/>
+                                    <h4>HTML</h4>
+                                </div>
+                                <div>
+                                    <img
+                                        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-plain.svg" alt="A blue CSS logo of a shield wit a backwards E inside of it." />
+                                    <h4>CSS</h4>
+                                </div>
+                                <div>
+                                    <img
+                                        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-plain.svg" alt="A Yellow JavaScript logo of a square with the letters J and S in the bottom right side of it."/>
+                                    <h4>JavaScript</h4>
+                                </div>
+                                <div>
+                                    <img
+                                        src="/images/icons/question-solid.svg" alt="A gray icon of a question mark."/>
+                                    <h4 class="technology-padding skill-element">SQLite</h4>
+                                </div>
+                            </div>
+                            <div class="project-summary">
+                                <h3 class="hero-sub-title project-sub-title">Summary</h3>
+                                <p class="content-body">Created an e-commerce web application with the Django framework
+                                    in a 3-person team while applying the Agile development life cycle in my Intro to
+                                    Software Engineering course. The web
+                                    application has standard functionality such as creating accounts for buyers,
+                                    sellers, and admin users, creating and adding product listings to user's shopping
+                                    cart, and tracking product inventory for the seller accounts. </p>
+                            </div>
+                        </div>
+
+                        <div class="format-text project-description content-body">
+                            <h3 class="hero-sub-title project-sub-title">Goals</h3>
+                            <ul>
+                                <li>Take on the role of a software engineer in a team setting and apply four sprints
+                                    throughout the lifecycle. </li>
+                                <li>Buyers, sellers, and admin accounts must be able to log in and have different
+                                    utilities. </li>
+                                <li>Buyer accounts can leave product ratings and check out items in their shopping carts.
+                                </li>
+                                <li>Seller accounts can add and edit product listing's name, description, image, price,
+                                    and category. </li>
+                                <li>Admin accounts can add and approve new user accounts and oversee users' actions.
+                                </li>
+                                <li>Site functionality like searching, comparing, buying, and returning items on the
+                                    site. </li>
+                            </ul>
+                            <h3 class="hero-sub-title project-sub-title">Constraints</h3>
+                            <ul>
+                                <li>The primary focus was on functionality due to the restricted time in each phase of
+                                    the life cycle. </li>
+                                <li>Can only handle a limited number of data due to storing it in SQLite. </li>
+                            </ul>
+
+                            <div class="image-container">
+                                <figure>
+                                    <img class="project-image-medium" src="../../images/projects/netdeals/net_deals_e_02.jpg"
+                                        width="500px" height="500px"
+                                        alt="A dog listing that displays price, quantity, rating, and listing description.">
+                                    <figcaption>A dog listing that displays product information.</figcaption>
+                                </figure>
+                                <figure>
+                                    <img class="project-image-medium" src="../../images/projects/netdeals/net_deals_e_03.jpg"
+                                        alt="Two listings of a cat being compared with price and ratings information">
+                                    <figcaption>Two listings of a cat being compared with price and rating information.
+                                    </figcaption>
+                                </figure>
+                            </div>
+
+                            <h3 class="hero-sub-title project-sub-title">Details</h3>
+                            <p>The project is divided into four sprints, each consisting of planning, design,
+                                coding/testing, and implementation phases.
+                            </p>
+                            <h4 class="project-header-four">Sprint 1: Planning</h4>
+                            <ul>
+                                <li>During sprint 1, I gathered and sorted requirements for the application from the
+                                    project stakeholders into a software specification document. </li>
+                                <li>A Software Requirements Specification (SRS) document describes what the software
+                                    will do, how it is expected to perform, its limitations, and how it will accomplish
+                                    stakeholder goals. Using an SRS ensures that every individual involved in the
+                                    development process understands what needs to be built. </li>
+                            </ul>
+                            <h4 class="project-header-four">Sprint 2: Design</h4>
+                            <ul>
+                                <li>In sprint 2, I developed user stories for some system features to define user
+                                    requirements. </li>
+                                <li>User stories are brief descriptions of a software feature from the perspective of
+                                    the end user who will interact with the software. </li>
+                                <li>Also, in sprint 2, I designed two diagrams. The Model-View-Controller (MVC)
+                                    Architecture diagram and UML Class diagrams. </li>
+                                <li>The architecture diagram demonstrates the interactions between different parts of
+                                    the Model-View-Controller (MVC) system. It shows how the Controller handles user
+                                    requests, how the Model retrieves the data, and how the View displays this data to
+                                    the user. </li>
+                                <li>In the diagram below, the browser requests data from the controller. The controller
+                                    then fetches the data from the model, which retrieves that data from an external
+                                    database, such as SQLite. Once the model has retrieved the data, it is sent back to
+                                    the controller. Finally, the controller displays the data to the view, which is the
+                                    front-end HTML content. </li>
+                            </ul>
+                            <figure class="center">
+                                <img class="project-image-large" src="../../images/projects/netdeals/Architecture_Diagram_Correction.jpg"
+                                    width="800px" height="800px" alt="A diagram showing the connections between the browser, server, and external data.">
+                                <figcaption>Diagram demonstrating the relationship between client (Browser), server (MVC layout), and the database.
+                                </figcaption>
+                            </figure>
+                            <ul>
+                                <li>The Unified Modeling Language (UML) class diagram showcases the relationships
+                                    between each class in the software. </li>
+                                <li>In the diagram below, the User class acts as a superclass, providing its attributes
+                                    (variables) and methods (functions) to the subclasses Login, Buyer, Seller, and
+                                    Admin. The Buyer class can create one or more instances of the Order, Cart, and
+                                    Listing classes for each user. This also applies to the seller class, which creates
+                                    one or more instances of the Listing class. </li>
+                            </ul>
+                            <figure class="center">
+                                <img class="project-image-large" src="../../images/projects/netdeals/Class_Diagrams_Sprint_2.jpg"
+                                    width="800px" height="800px" alt="A Unified Modeling Language diagram displaying the relationships between classes, variables, and functions.">
+                                <figcaption>Diagram demonstrating the relationships between each class in the e-commerce web application.</figcaption>
+                            </figure>
+                            <h4 class="project-header-four">Sprint 3: Coding Phase</h4>
+                            <ul>
+                                <li>In sprint 3, I developed and integrated several backend features including return listing, forgot password, and order history to enhance software functionality. </li>
+                                <li>Afterward, I wrote unit tests using Django’s built-in unit testing library to ensure code reliability and performance. </li>
+                            </ul>
+                            <h4 class="project-header-four">Sprint 4: Implementation Phase</h4>
+                            <ul>
+                                <li>Ran the Pylint static analysis tool to assess software quality to ensure it adheres to coding conventions. </li>
+                                <li>    Verified all the application requirements from the Software Requirements Specification Document and the User stories to see if all features matched the user’s expectations. </li>
+                            </ul>
+                            <h3 class="hero-sub-title project-sub-title">Challenges</h3>
+                            <ul>
+                                <li>Managing time effectively while implementing features on the website and balancing
+                                    other classes and projects. </li>
+                                <li>Limited knowledge of the Django framework. Difficult time implementing features due
+                                    to limited understanding of the framework. </li>
+                                <li>Learning how to manage priorities, assisting teammates with struggles, and
+                                    communicate effectively. </li>
+                            </ul>
+                            <h3 class="hero-sub-title project-sub-title">Lessons Learned</h3>
+                            <ul>
+                                <li>You don't need to know everything about the technology that you are working with,
+                                    only the details to accomplish the task effectively. </li>
+                                <li>Manage tasks based on priority and due date. Allocate more time to issues that you
+                                    don't understand or having a difficult time implementing. </li>
+                                <li>Checking up on teammates can provide new perspectives to accomplish a task and
+                                    overcome project struggles. </li>
+                            </ul>
+                            <h3 class="hero-sub-title project-sub-title">Contributors </h3>
+                            <ul>
+                                <li><a class="link-visited-dark projects-visited-dark" href="https://github.com/justinwhitfieldd">@justinwhitfieldd</a></li>
+                                <li><a class="link-visited-dark projects-visited-dark" href="https://github.com/laurenfortnerr">@laurenfortnerr</a></li>
+                                <li><a class="link-visited-dark projects-visited-dark" href="https://github.com/Doan-Brian">@Doan-Brian</a></li>
+                            </ul>
+                            <h3 class="hero-sub-title project-sub-title">Tags</h3>
+                            <ul class="tag" role="list">
+                                <li>#Web Development </li>
+                                <li>#Django Framework</li>
+                                <li>#Python </li>
+                                <li>#HTML </li>
+                                <li>#CSS </li>
+                                <li>#JavaScript </li>
+                                <li>#SQLite </li>
+                            </ul>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+        <div class="disclaimer">
+            <p>The use of programming languages, organizational, and technology logos on this site is solely for demonstrating the relevant technologies and complies with the respective brand guidelines. The organizations referenced do not affiliate with, sponsor, or endorse any content, project, or application on this site.</p>
+        </div>
+    </div>
+    <hr>
+    <footer class="footer-text-color">
+        <div class="footer-container">
+            <div class="footer-column">
+                <h3 class="footer-title display-dark">Resources</h3>
+                <ul class="footer-element">
+                    <li class="display-dark">Social Media Icons by fontawesome</li>
+                    <li class="display-dark">Technology Icons by devicon</li>
+                    <li class="display-dark">Hosted with Github Pages</li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h3 class="footer-title display-dark">Social Media</h3>
+                <a class="footer-icon footer-linkedin-icon-dark"
+                    href="https://www.linkedin.com/in/kendarius-james/"></a>
+                <a class="footer-icon footer-github-icon-dark" href="https://github.com/Kendarius-James"></a>
+            </div>
+        </div>
+        <p class="copyright display-dark">@2024 Kendarius James</p>
+    </footer>
+</body>
+
+</html>

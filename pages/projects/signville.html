@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, intital-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link href="/styles/global.css" rel="stylesheet">
+    <!-- Add new css document here -->
+    <link href="/styles/project-display.css" rel="stylesheet">
+    <script src="/scripts/theme.js" defer></script>
+
+    <title>Project: Signville</title>
+</head>
+
+<body class="body-dark body-format montserrat-theme-font transition" id="transition">
+    <div>
+        <a href="#body-content" class="skip-link skip-link-dark">Skip to Main Content</a>
+        <nav class="nav-fonts nav-color-dark" id="navTop">
+
+            <!-- desktop view -->
+            <div class="desktop-nav-view">
+                <!-- remove link-visited-dark to highlight current tab -->
+                <a href="../../index.html" class="nav-item link-visited-dark nav-hover-dark">About Me</a>
+                <a href="../../pages/projects.html" class="nav-item nav-hover-dark theme-dark">Projects</a>
+                <!-- <a class="nav-item link-visited-dark nav-hover-dark">Repositiories</a> -->
+                <!-- <a class="nav-item link-visited-dark nav-hover-dark">Resume</a> -->
+                <!-- <a class="nav-item link-visited-dark nav-hover-dark">Blog</a> -->
+                <button aria-label="Toggle light or dark mode"
+                    class="nav-color-dark nav-hover-dark changeThemeButton changeThemeButton-dark" id="changeTheme">
+                    <img src="../../images/icons/sun.svg" width="20" height="20" alt="sun to toggle dark mode"
+                        class="hide-image">
+                </button>
+            </div>
+
+            <div class="nav-fonts nav-color-dark mobile-nav-view">
+                <button aria-label="Toggle drop down menu" class="drop-down-icon drop-down-icon-dark mobile-hidden"
+                    id="dropDown">
+                    <img src="../../images/icons/bars-solid-light.svg" width="27.5" hieght="30"
+                        alt="bars for dropdown menu" id="barLight">
+                    <img src="../../images/icons/bars-solid-dark.svg" width="27.5" height="30"
+                        alt="bars for dropdown menu" class="hidden" id="barDark">
+                </button>
+            </div>
+        </nav>
+
+        <!-- mobile dropdown -->
+        <div class="overlay overlay-dark nav-fonts-overlay nav-color-dark mobile-nav-hidden transition" id="mobileNav">
+            <div>
+                <div class="options-overlay">
+                    <button aria-label="Toogle light mode"
+                        class="nav-color-dark nav-hover-dark changeThemeButton changeThemeButton-dark"
+                        id="changeThemeMobile"></button>
+                    <button aria-label="Toggle drop down menu" class="drop-down-icon drop-down-icon-dark" id="dropDown">
+                        <img src="../../images/icons/bars-solid-light.svg" width="27.5" height="30"
+                            alt="bars for dropdown menu" id="barLight">
+                        <img src="../../images/icons/bars-solid-dark.svg" widht="27.5" height="30"
+                            alt="bars for dropdown menu" class="hidden" id="barDark">
+                    </button>
+                </div>
+
+                <div class="overlay-container">
+                    <a href="../../index.html" class="nav-item link-visited-dark nav-hover-dark">About Me</a>
+                    <a href="../../pages/projects.html" class="nav-item nav-hover-dark theme-dark">Projects</a>
+                    <!-- <a class="nav-item link-visited-dark nav-hover-dark">Repositiories</a> -->
+                    <!-- <a class="nav-item link-visited-dark nav-hover-dark">Resume</a> -->
+                    <!-- <a class="nav-item link-visited-dark nav-hover-dark">Blog</a> -->
+                </div>
+            </div>
+        </div>
+        <hr>
+        <!-- Alert for users with big screens -->
+        <p class="big-screen-alert big-screen-alert-dark transition hidden">Your screen size is too big. Some features
+            may not function
+            as intended.</p>
+
+        <!-- Body Content -->
+        <div id="body-content">
+            <button class="top-arrow-dark top-arrow-properties body-dark" aria-label="Jump to top of page?"
+                id="scrollButton"></button>
+
+            <!-- Page classes does not transfer between pages -->
+            <div>
+                <div class="title-container">
+                    <h1 class="hero-main-title">Signville</h1>
+                    <h2 class="hero-sub-title theme-dark">March 2022 - March 2022</h2>
+                </div>
+                <div class="project-body">
+                    <div>
+                        <div class=" project-hero">
+                            <img class="hero-project-image" src="../../images/projects/signville/Signvile-0.jpg" alt="A blue video game title screen of a village.">
+                            <h3 class="hero-sub-title project-sub-title">Technologies Used</h3>
+                            <div class="technology-section content-body">
+                                <div>
+                                    <img src="/images/icons/question-solid.svg" alt="An icon of a gray question mark."/>
+                                    <h4>C#</h4>
+                                </div>
+                                <div>
+                                    <img src="/images/icons/question-solid.svg" alt="An icon of a gray question mark."/>
+                                    <h4>Unity</h4>
+                                </div>
+                            </div>
+                            <div class="project-summary">
+                                <h3 class="hero-sub-title project-sub-title">Summary</h3>
+                                <p class="content-body">Designed and developed a 2D platformer game in my Game Design
+                                    course during a weeklong game jam.
+                                    The video game uses the Unity engine with the Sunny Land asset pack. </p>
+                            </div>
+                        </div>
+
+                        <div class="format-text project-description content-body">
+                            <h3 class="hero-sub-title project-sub-title">Goals</h3>
+                            <ul>
+                                <li>Create a solo game jam game with the theme “signs”.
+                                </li>
+                            </ul>
+                            <h3 class="hero-sub-title project-sub-title">Constraints</h3>
+                            <ul>
+                                <li>Time limited to only one week.
+                                </li>
+                            </ul>
+
+                            <h3 class="hero-sub-title project-sub-title">Timeline</h3>
+                            <h4 class="project-header-four">Intro</h4>
+                            <p>
+                                To start the project, I came up with the idea of creating an action 2D platformer due to
+                                my familiarity with the Unity engine and the experience I got from the first game I
+                                built.
+                                After getting a rough idea and concept that I wanted to create, I next looked at some
+                                free game assets on Unity's asset store. The asset pack that I chose was the Sunny Land
+                                asset pack, which was used for the background and level design of the game.
+                                After getting the assets imported into the Unity engine, I started to code the basic
+                                movement of the main character. Once that was accomplished, I next used Unity's 2D tile
+                                map feature to design the level. This led to the creation of the dock, village, and cave
+                                on the level.
+                            </p>
+
+                            <div class="image-container">
+                                <figure>
+                                    <img class="project-image" src="../../images/projects/signville/Signville-1.jpg"
+                                        alt="2D side view of grouped houses in a town.">
+                                    <figcaption>Beginning of the game where the town is located.</figcaption>
+                                </figure>
+                                <figure>
+                                    <img class="project-image" src="../../images/projects/signville/Signville-2.jpg"
+                                        alt="2D side view of a dark cave with brown rocks.">
+                                    <figcaption>Cave entrance on the other side of town.</figcaption>
+                                </figure>
+                            </div>
+                            <h4 class="project-header-four">Charaters</h4>
+                            <p>
+                                During the game jam, I wanted to be creative and create two of the characters from
+                                scratch. For there, I turned to the open-source drawing software Krita to draw the main
+                                character and the blacksmith. Krita is unique since it had a built-in animator that
+                                helped me animate the player attacking, walking, and idle state.
+                                Once the characters had been drawn and animated, it was time to create the first level.
+                            </p>
+                            <h4 class="project-header-four">Intro Level</h4>
+                            <p>
+                                The goal was a short introductory level where the player could get adjusted to the
+                                movement mechanics and the basic story. Due to time, I decided to use the same level design for the second level as well.
+                            </p>
+
+                            <h4 class="project-header-four">Health Bar</h4>
+                            <p>
+                                For the health bar, I created an empty container with a red bar inside of it. When the
+                                player walked over the enemy sprite, it would decrease the health value associated with
+                                the container. When the scene switches to the second level or it refreshes, the scene
+                                displays the health bar and sets the initial health bar to the maximum level.
+                            </p>
+                            <h4 class="project-header-four">Enemies</h4>
+                            <p>
+                                For the enemies, I decided to go with the possum sprite that came with the sunny land
+                                asset pack due to a lack of time. For the enemy AI, I coded it to infinitely move in one
+                                direction and flip after a certain time. When the timer in the sprite is up, the
+                                sprite's direction will be flipped and moved in the opposite direction. This way I could
+                                have different speeds and timers to fit the versatile design of the level and the
+                                weeklong time constraint.
+                            </p>
+
+                            <h4 class="project-header-four">Story Logic</h4>
+                            <p> Lastly, I coded the story logic to transition the first level to the second level and
+                                the final ending of the game. To accomplish this, I detected if the player sprite is
+                                inside of the story object and transition to the next scene. </p>
+
+                            <h3 class="hero-sub-title project-sub-title">Challenges</h3>
+                            <ul>
+                                <li>Efficiently scheduling time to design and create the game in a week.
+                                </li>
+                                <li>Balancing out other courses that was currently taking.
+                                </li>
+                                <li>Familiarity with the Unity engine.
+                            </ul>
+                            <h3 class="hero-sub-title project-sub-title">Lessons Learned</h3>
+                            <ul>
+                                <li>The more you practice creating games or art, the better you become at them. 
+                                </li>
+                                <li>The player's attack sprite animation could have been more impactful. 
+                                </li>
+                            </ul>
+                            <h3 class="hero-sub-title project-sub-title">Tags</h3>
+                            <ul class="tag" role="list">
+                                <li>#Game Design</li>
+                                <li>#Game Development</li>
+                                <li>#Unity</li>
+                                <li>#C#</li>
+                                <li>#Krita</li>
+                                <li>#.NET</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="disclaimer">
+            <p>The use of programming languages, organizational, and technology logos on this site is solely for
+                demonstrating the relevant technologies and complies with the respective brand guidelines. The
+                organizations referenced do not affiliate with, sponsor, or endorse any content, project, or application
+                on this site.</p>
+        </div>
+    </div>
+    <hr>
+    <footer class="footer-text-color">
+        <div class="footer-container">
+            <div class="footer-column">
+                <h3 class="footer-title display-dark">Resources</h3>
+                <ul class="footer-element">
+                    <li class="display-dark">Social Media Icons by fontawesome</li>
+                    <li class="display-dark">Technology Icons by devicon</li>
+                    <li class="display-dark">Hosted with Github Pages</li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h3 class="footer-title display-dark">Social Media</h3>
+                <a class="footer-icon footer-linkedin-icon-dark"
+                    href="https://www.linkedin.com/in/kendarius-james/"></a>
+                <a class="footer-icon footer-github-icon-dark" href="https://github.com/Kendarius-James"></a>
+            </div>
+        </div>
+        <p class="copyright display-dark">@2024 Kendarius James</p>
+    </footer>
+</body>
+
+</html>

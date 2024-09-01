@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, intital-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link href="/styles/global.css" rel="stylesheet">
+    <!-- Add new css document here -->
+    <link href="/styles/project-display.css" rel="stylesheet">
+    <script src="/scripts/theme.js" defer></script>
+
+    <title>Under Construction</title>
+</head>
+
+<body class="body-dark body-format montserrat-theme-font transition" id="transition">
+    <div>
+        <a href="#body-content" class="skip-link skip-link-dark">Skip to Main Content</a>
+        <nav class="nav-fonts nav-color-dark" id="navTop">
+
+            <!-- desktop view -->
+            <div class="desktop-nav-view">
+                <!-- remove link-visited-dark to highlight current tab -->
+                <a href="../../index.html" class="nav-item link-visited-dark nav-hover-dark">About Me</a>
+                <a href="../../pages/projects.html" class="nav-item nav-hover-dark theme-dark">Projects</a>
+                <!-- <a class="nav-item link-visited-dark nav-hover-dark">Repositiories</a> -->
+                <!-- <a class="nav-item link-visited-dark nav-hover-dark">Resume</a> -->
+                <!-- <a class="nav-item link-visited-dark nav-hover-dark">Blog</a> -->
+                <button aria-label="Toggle light or dark mode"
+                    class="nav-color-dark nav-hover-dark changeThemeButton changeThemeButton-dark" id="changeTheme">
+                    <img src="../../images/icons/sun.svg" width="20" height="20" alt="sun to toggle dark mode"
+                        class="hide-image">
+                </button>
+            </div>
+
+            <div class="nav-fonts nav-color-dark mobile-nav-view">
+                <button aria-label="Toggle drop down menu" class="drop-down-icon drop-down-icon-dark mobile-hidden"
+                    id="dropDown">
+                    <img src="../../images/icons/bars-solid-light.svg" width="27.5" hieght="30"
+                        alt="bars for dropdown menu" id="barLight">
+                    <img src="../../images/icons/bars-solid-dark.svg" width="27.5" height="30"
+                        alt="bars for dropdown menu" class="hidden" id="barDark">
+                </button>
+            </div>
+        </nav>
+
+        <!-- mobile dropdown -->
+        <div class="overlay overlay-dark nav-fonts-overlay nav-color-dark mobile-nav-hidden transition" id="mobileNav">
+            <div>
+                <div class="options-overlay">
+                    <button aria-label="Toogle light mode"
+                        class="nav-color-dark nav-hover-dark changeThemeButton changeThemeButton-dark"
+                        id="changeThemeMobile"></button>
+                    <button aria-label="Toggle drop down menu" class="drop-down-icon drop-down-icon-dark" id="dropDown">
+                        <img src="../../images/icons/bars-solid-light.svg" width="27.5" height="30"
+                            alt="bars for dropdown menu" id="barLight">
+                        <img src="../../images/icons/bars-solid-dark.svg" widht="27.5" height="30"
+                            alt="bars for dropdown menu" class="hidden" id="barDark">
+                    </button>
+                </div>
+
+                <div class="overlay-container">
+                    <a href="../../index.html" class="nav-item link-visited-dark nav-hover-dark">About Me</a>
+                    <a href="../../pages/projects.html" class="nav-item nav-hover-dark theme-dark">Projects</a>
+                    <!-- <a class="nav-item link-visited-dark nav-hover-dark">Repositiories</a> -->
+                    <!-- <a class="nav-item link-visited-dark nav-hover-dark">Resume</a> -->
+                    <!-- <a class="nav-item link-visited-dark nav-hover-dark">Blog</a> -->
+                </div>
+            </div>
+        </div>
+        <hr>
+        <!-- Alert for users with big screens -->
+        <p class="big-screen-alert big-screen-alert-dark transition hidden">Your screen size is too big. Some features
+            may not function
+            as intended.</p>
+
+        <!-- Body Content -->
+        <div id="body-content">
+            <button class="top-arrow-dark top-arrow-properties body-dark" aria-label="Jump to top of page?"
+                id="scrollButton"></button>
+
+            <!-- Page classes does not transfer between pages -->
+            <div>
+                <div class="title-container">
+                    <h1 class="hero-main-title">Test Project</h1>
+                    <h2 class="hero-sub-title theme-dark">Month YYYY - Month YYYY</h2>
+                </div>
+                <div class="project-body">
+                    <div>
+                        <div class=" project-hero">
+                            <img class="hero-project-image" src="../../images/profile/placeholder_image.jpg">
+                            <h3 class="hero-sub-title project-sub-title">Technologies Used</h3>
+                            <div class="technology-section content-body">
+                                <div>
+                                    <img
+                                        src="/images/icons/question-solid.svg" />
+                                    <h4>technology 1</h4>
+                                </div>
+                                <div>
+                                    <img
+                                        src="/images/icons/question-solid.svg" />
+                                    <h4>technology 1</h4>
+                                </div>
+                                <div>
+                                    <img
+                                        src="/images/icons/question-solid.svg" />
+                                    <h4>technology 1</h4>
+                                </div>
+                            </div>
+                            <div class="project-summary">
+                                <h3 class="hero-sub-title project-sub-title">Summary</h3>
+                                <p class="content-body">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                    elit. In imperdiet erat quis augue imperdiet consequat.
+                                    Maecenas malesuada erat non justo luctus eleifend. Phasellus leo elit, fringilla ac
+                                    congue
+                                    non,
+                                    placerat eu elit. Phasellus vel diam vehicula, consequat odio sit amet, hendrerit
+                                    tellus.
+                                    Nullam hendrerit purus nec enim aliquam semper. Nam venenatis commodo aliquam.</p>
+                            </div>
+                        </div>
+
+                        <div class="format-text project-description content-body">
+                            <h3 class="hero-sub-title project-sub-title">Goals</h3>
+                            <ul>
+                                <li>Lorem ipsum dolor sit amet, consectetur adipiscing
+                                    elit.
+                                </li>
+                                <li>Lorem ipsum dolor sit amet, consectetur adipiscing
+                                    elit.
+                                </li>
+                                <li>Lorem ipsum dolor sit amet, consectetur adipiscing
+                                    elit.
+                                </li>
+                                <li>Lorem ipsum dolor sit amet, consectetur adipiscing
+                                    elit.
+                                </li>
+                                <li>Lorem ipsum dolor sit amet, consectetur adipiscing
+                                    elit.
+                                </li>
+                            </ul>
+                            <h3 class="hero-sub-title project-sub-title">Constraints</h3>
+                            <ul>
+                                <li>Lorem ipsum dolor sit amet, consectetur adipiscing
+                                    elit.
+                                </li>
+                                <li>Lorem ipsum dolor sit amet, consectetur adipiscing
+                                    elit.
+                                </li>
+                                <li>Lorem ipsum dolor sit amet, consectetur adipiscing
+                                    elit.
+                                </li>
+                                <li>Lorem ipsum dolor sit amet, consectetur adipiscing
+                                    elit.
+                                </li>
+                                <li>Lorem ipsum dolor sit amet, consectetur adipiscing
+                                    elit.
+                                </li>
+                            </ul>
+                            <div class="image-container">
+                                <figure>
+                                    <img class="project-image" src="../../images/profile/placeholder_image.jpg" alt="">
+                                    <figcaption>This is a test caption.</figcaption>
+                                </figure>
+                                <figure>
+                                    <img class="project-image" src="../../images/profile/placeholder_image.jpg" alt="">
+                                    <figcaption>This is a test caption.</figcaption>
+                                </figure>
+                                <figure>
+                                    <img class="project-image" src="../../images/profile/placeholder_image.jpg" alt="">
+                                    <figcaption>This is a test caption.</figcaption>
+                                </figure>
+
+                            </div>
+
+                            <h3 class="hero-sub-title project-sub-title">Details</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing
+                                elit. In imperdiet erat quis augue imperdiet consequat.
+                                Maecenas malesuada erat non justo luctus eleifend. Phasellus leo elit, fringilla ac
+                                congue
+                                non,
+                                placerat eu elit. Phasellus vel diam vehicula, consequat odio sit amet, hendrerit
+                                tellus.
+                                Nullam hendrerit purus nec enim aliquam semper. Nam venenatis commodo aliquam.
+                            </p>
+                            <h3 class="hero-sub-title project-sub-title">Challenges</h3>
+                            <ul>
+                                <li>Lorem ipsum dolor sit amet, consectetur adipiscing
+                                    elit.
+                                </li>
+                                <li>Lorem ipsum dolor sit amet, consectetur adipiscing
+                                    elit.
+                                </li>
+                                <li>Lorem ipsum dolor sit amet, consectetur adipiscing
+                                    elit.
+                                </li>
+                                <li>Lorem ipsum dolor sit amet, consectetur adipiscing
+                                    elit.
+                                </li>
+                                <li>Lorem ipsum dolor sit amet, consectetur adipiscing
+                                    elit.
+                                </li>
+                            </ul>
+                            <h3 class="hero-sub-title project-sub-title">Lessons Learned</h3>
+                            <ul>
+                                <li>Lorem ipsum dolor sit amet, consectetur adipiscing
+                                    elit.
+                                </li>
+                                <li>Lorem ipsum dolor sit amet, consectetur adipiscing
+                                    elit.
+                                </li>
+                                <li>Lorem ipsum dolor sit amet, consectetur adipiscing
+                                    elit.
+                                </li>
+                                <li>Lorem ipsum dolor sit amet, consectetur adipiscing
+                                    elit.
+                                </li>
+                                <li>Lorem ipsum dolor sit amet, consectetur adipiscing
+                                    elit.
+                                </li>
+                            </ul>
+                            <h3 class="hero-sub-title project-sub-title">Tags</h3>
+                            <ul class="tag" role="list">
+                                <li>#technology 1</li>
+                                <li>#technology 2</li>
+                                <li>#technology 3</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+        <div class="disclaimer">
+            <p>The use of programming languages, organizational, and technology logos on this site is solely for demonstrating the relevant technologies and complies with the respective brand guidelines. The organizations referenced do not affiliate with, sponsor, or endorse any content, project, or application on this site.</p>
+        </div>
+    </div>
+    <hr>
+    <footer class="footer-text-color">
+        <div class="footer-container">
+            <div class="footer-column">
+                <h3 class="footer-title display-dark">Resources</h3>
+                <ul class="footer-element">
+                    <li class="display-dark">Social Media Icons by fontawesome</li>
+                    <li class="display-dark">Technology Icons by devicon</li>
+                    <li class="display-dark">Hosted with Github Pages</li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h3 class="footer-title display-dark">Social Media</h3>
+                <a class="footer-icon footer-linkedin-icon-dark"
+                    href="https://www.linkedin.com/in/kendarius-james/"></a>
+                <a class="footer-icon footer-github-icon-dark" href="https://github.com/Kendarius-James"></a>
+            </div>
+        </div>
+        <p class="copyright display-dark">@2024 Kendarius James</p>
+    </footer>
+</body>
+
+</html>

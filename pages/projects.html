@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, intital-scale=1.0">
+    <meta name="description" content="Kendarius's GitHub page list of dynamic coding projects">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link href="/styles/global.css" rel="stylesheet">
+    <link href="/styles/projects.css" rel="stylesheet">
+    <script src="/scripts/theme.js" defer></script>
+    <script src="/scripts/projects.js" defer></script>
+    <title>Projects</title>
+</head>
+
+<body class="body-dark body-format montserrat-theme-font transition" id="transition">
+    <div>
+        <a href="#body-content" class="skip-link skip-link-dark">Skip to Main Content</a>
+        <nav class="nav-fonts nav-color-dark" id="navTop">
+
+            <!-- desktop view -->
+            <div class="desktop-nav-view">
+                <!-- remove link-visited-dark to highlight current tab -->
+                <a href="../index.html" class="nav-item link-visited-dark nav-hover-dark">About Me</a>
+                <a href="../pages/projects.html" class="nav-item nav-hover-dark theme-dark">Projects</a>
+                <!-- <a class="nav-item link-visited-dark nav-hover-dark">Repositiories</a> -->
+                <!-- <a class="nav-item link-visited-dark nav-hover-dark">Resume</a> -->
+                <!-- <a class="nav-item link-visited-dark nav-hover-dark">Blog</a> -->
+                <button aria-label="Toggle light or dark mode"
+                    class="nav-color-dark nav-hover-dark changeThemeButton changeThemeButton-dark" id="changeTheme">
+                    <img src="../images/icons/sun.svg" width="20" height="20" alt="sun to toggle dark mode"
+                        class="hide-image">
+                </button>
+            </div>
+
+            <div class="nav-fonts nav-color-dark mobile-nav-view">
+                <button aria-label="Toggle drop down menu" class="drop-down-icon drop-down-icon-dark mobile-hidden" id="dropDown">
+                    <img src="../images/icons/bars-solid-light.svg" width="27.5" hieght="30"
+                        alt="bars for dropdown menu" id="barLight">
+                    <img src="../images/icons/bars-solid-dark.svg" width="27.5" height="30" alt="bars for dropdown menu"
+                        class="hidden" id="barDark">
+                </button>
+            </div>
+        </nav>
+
+        <!-- mobile dropdown -->
+        <div class="overlay overlay-dark nav-fonts-overlay nav-color-dark mobile-nav-hidden transition" id="mobileNav">
+            <div>
+                <div class="options-overlay">
+                    <button aria-label="Toogle light mode" class="nav-color-dark nav-hover-dark changeThemeButton changeThemeButton-dark"
+                        id="changeThemeMobile"></button>
+                    <button aria-label="Toggle drop down menu" class="drop-down-icon drop-down-icon-dark" id="dropDown">
+                        <img src="../images/icons/bars-solid-light.svg" width="27.5" height="30"
+                            alt="bars for dropdown menu" id="barLight">
+                        <img src="../images/icons/bars-solid-dark.svg" widht="27.5" height="30"
+                            alt="bars for dropdown menu" class="hidden" id="barDark">
+                    </button>
+                </div>
+
+                <div class="overlay-container">
+                    <a href="../index.html" class="nav-item link-visited-dark nav-hover-dark">About Me</a>
+                    <a href="../pages/projects.html" class="nav-item nav-hover-dark theme-dark">Projects</a>
+                    <!-- <a class="nav-item link-visited-dark nav-hover-dark">Repositiories</a> -->
+                    <!-- <a class="nav-item link-visited-dark nav-hover-dark">Resume</a> -->
+                    <!-- <a class="nav-item link-visited-dark nav-hover-dark">Blog</a> -->
+                </div>
+            </div>
+        </div>
+        <hr>
+        <!-- Alert for users with big screens -->
+        <p class="big-screen-alert big-screen-alert-dark transition hidden">Your screen size is too big. Some features may not function as intended.</p>
+
+        <!-- Body Content -->
+        <button class="top-arrow-dark top-arrow-properties body-dark" aria-label="Jump to top of page?"
+            id="scrollButton"></button>
+        <div id="body-content">
+
+            <h1 class="hero-main-title">Projects</h1>
+
+            <div class="filter-container">
+                <div class="select-container">
+                    <label class="content-heading" for="order-projects">Sort by: </label>
+                    <select class="drop-down-dark" name="order" id="orderProjects" onchange="sortCards()">
+                        <option value="Recent to Old" selected>Recent Date</option>
+                        <option value="Old to Recent">Oldest Date</option>
+                        <option value="AtoZ" aria-label="A to Z">A - Z</option>
+                        <option value="ZtoA" aria-label="Z to A">Z - A</option>
+                        <!-- <option value="">Default</option> -->
+                    </select>
+                </div>
+                <div class="form-container">
+                    <form>
+                        <label class="content-heading" for="searchProjects">Search: </label>
+                        <input class="input-dark" type="search" id="searchProjects" name="search"
+                            placeholder="Search for projects..." maxlength="50" />
+                        <!-- <button type="submit">Search</button> -->
+                    </form>
+                </div>
+            </div>
+
+            <div>
+                <div class="card-container" id="cardContainer">
+
+                    <!-- Work Container -->
+
+                    <!-- <div class="heading-container">
+                        <h2 class="content-heading theme-dark">Work</h2>
+                        <hr class="section-divider section-divider-dark">
+                    </div>
+                    <div id="workContainer">
+
+                    </div> -->
+
+                    <!-- Personal Container -->
+
+                    <div class="heading-container">
+                        <h2 class="content-heading theme-dark">Personal</h2>
+                        <hr class="section-divider section-divider-dark">
+                    </div>
+                    <div id="personalContainer">
+                        
+                        <div class="card card-background-dark" data-category="Web Development,Web Design" data-technologies="html,css,javascript,the figma platform,github pages">
+                            <a class="link-visited-dark" href="../pages/projects/github-page-update.html">
+                                <img src="../images/projects/github_page_update.png" alt="Hero section of a dark background of the github home page.">
+                            </a>
+                                <div class="card-body">
+                                    <h3 class="card-heading content-heading">GitHub Page Update</h3>
+                                    <h4 class="card-year">May 2024 - August 2024</h4>
+                                    <p class="card-description">Redesigned my GitHub page showcasing past and future coding projects.</p>
+                                </div>
+                        </div>
+
+                        <div class="card card-background-dark" data-category="Web Development, Web Design" data-technologies="HTML,CSS,JavaScript,Bootstrap">
+                            <a class="link-visited-dark" href="../pages/projects/github-page.html">
+                                <img src="../images/projects/github-page/github_page_s.jpg" alt="Hero section of a white background of a desk in a white brick room.">
+                            </a>
+                            <div class="card-body">
+                                <h3 class="card-heading content-heading">GitHub Webpage</h3>
+                                <h4 class="card-year">May 2023 - July 2023</h4>
+                                <p class="card-description">Created a GitHub page with the purpose to showcase class projects and professional experiences.</p>
+                            </div>
+                        </div>
+                        
+                        <!-- <div class="card card-background-dark" data-category="" data-technologies="">
+                            <a class="link-visited-dark" href="">
+                                <img src="../images/projects/placeholder_image.jpg" alt="unknown">
+                            </a>
+                            <div class="card-body">
+                                <h3 class="card-heading content-heading">Placeholder Heading</h3>
+                                <h4 class="card-year">June 2002 - July 2002</h4>
+                                <p class="card-description">This is a short description for the project.</p>
+                            </div>
+                        </div> -->
+
+                        
+                    </div>
+                    
+                    <!-- Course Work -->
+
+                    <div class="heading-container">
+                        <h2 class="content-heading theme-dark">Course Work</h2>
+                        <hr class="section-divider section-divider-dark">
+                    </div>
+                    <div id="courseContainer">
+                            
+                            <div class="card card-background-dark" data-category="Web Development" data-technologies="django framework,python,html,css,javascript,sqlite">
+                                <a class="link-visited-dark" href="../pages/projects/net-deals.html">
+                                    <img src="../images/projects/netdeals/net_deals_01.jpg" alt="White dashboard of an e-commerce store filled with dogs and cats.">
+                                </a>
+                                <div class="card-body">
+                                    <h3 class="card-heading content-heading">Net Deals</h3>
+                                    <h4 class="card-year">Janurary 2023 - May 2023</h4>
+                                    <p class="card-description">Created an e-commerce web application with the Django framework for my Intro to Software Engineering Course.</p>
+                                </div>
+                            </div>
+
+                        <div class="card card-background-dark" data-category="Image Recognition,Computer Vision,Artificial Intelligence" data-technologies="Python,OpenCV,Numpy,MediaPipe,Matplotlib">
+                            <a class="link-visited-dark" href="../pages/projects/dog-recognition.html">
+                                <img src="../images/projects/dog-recognition/Image_Recognition.jpg" alt="A grayed out image of a bull dog with a red bounding box around it.">
+                            </a>
+                            <div class="card-body">
+                                <h3 class="card-heading content-heading">Dog Recognition Algorithm</h3>
+                                <h4 class="card-year">November - December 2022</h4>
+                                <p class="card-description">Developed an dog recognition algorithm that detect dogs in images during my AI Robotics Course.  </p>
+                            </div>
+                        </div>
+                        <div class="card card-background-dark" data-category="game design,game development" data-technologies="C#,Unity,krita,.NET">
+                            <a class="link-visited-dark" href="../pages/projects/signville.html">
+                                <img src="../images/projects/signville/Signvile-0.jpg" alt="A blue video game title screen of a village.">
+                            </a>
+                            <div class="card-body">
+                                <h3 class="card-heading content-heading">Signville</h3>
+                                <h4 class="card-year">March 2022 - March 2022</h4>
+                                <p class="card-description">Designed and developed a week long platformer game jam in Game Design Course.</p>
+                            </div>
+                        </div>
+                        <!-- <div class="card card-background-dark" data-category="" data-technologies="">
+                            <a class="link-visited-dark" href="">
+                                <img src="../images/projects/placeholder_image.jpg" alt="unknown">
+                            </a>
+                            <div class="card-body">
+                                <h3 class="card-heading content-heading">Placeholder Heading</h3>
+                                <h4 class="card-year">June 2002 - July 2002</h4>
+                                <p class="card-description">This is a short description for the project.</p>
+                            </div>
+                        </div> -->
+
+                    </div>
+                </div>
+                <h2 class="hidden hero-sub-title" id="results">No Results Found</h1>
+            </div>
+        </div>
+
+    </div>
+    <hr>
+    <footer class="footer-text-color">
+        <div class="footer-container">
+            <div class="footer-column">
+                <h3 class="footer-title display-dark">Resources</h3>
+                <ul class="footer-element">
+                    <li class="display-dark">Social Media Icons by fontawesome</li>
+                    <li class="display-dark">Technology Icons by devicon</li>
+                    <li class="display-dark">Hosted with Github Pages</li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h3 class="footer-title display-dark">Social Media</h3>
+                <a class="footer-icon footer-linkedin-icon-dark" href="https://www.linkedin.com/in/kendarius-james/"></a>
+                <a class="footer-icon footer-github-icon-dark" href="https://github.com/Kendarius-James"></a>
+            </div>
+        </div>
+
+        <p class="copyright display-dark">@2024 Kendarius James</p>
+    </footer>
+</body>
+
+</html>
