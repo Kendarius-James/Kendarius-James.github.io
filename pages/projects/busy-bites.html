@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link href="/styles/global.css" rel="stylesheet">
+    <!-- Add new css document here -->
+    <link href="/styles/project-display.css" rel="stylesheet">
+    <script src="/scripts/theme.js" defer></script>
+
+    <title>Project: Busy Bites</title>
+</head>
+
+<body class="body-dark body-format montserrat-theme-font transition" id="transition">
+    <div>
+        <a href="#body-content" class="skip-link skip-link-dark">Skip to Main Content</a>
+        <nav class="nav-fonts nav-color-dark" id="navTop">
+
+            <!-- desktop view -->
+            <div class="desktop-nav-view">
+                <!-- remove link-visited-dark to highlight current tab -->
+                <a href="../../index.html" class="nav-item link-visited-dark nav-hover-dark">About Me</a>
+                <a href="../../pages/projects.html" class="nav-item nav-hover-dark theme-dark">Projects</a>
+                <!-- <a class="nav-item link-visited-dark nav-hover-dark">Repositiories</a> -->
+                <!-- <a class="nav-item link-visited-dark nav-hover-dark">Resume</a> -->
+                <!-- <a class="nav-item link-visited-dark nav-hover-dark">Blog</a> -->
+                <button aria-label="Toggle light or dark mode"
+                    class="nav-color-dark nav-hover-dark changeThemeButton changeThemeButton-dark" id="changeTheme">
+                    <img src="../../images/icons/sun.svg" width="20" height="20" alt="sun to toggle dark mode"
+                        class="hide-image">
+                </button>
+            </div>
+
+            <div class="nav-fonts nav-color-dark mobile-nav-view">
+                <button aria-label="Toggle drop down menu" class="drop-down-icon drop-down-icon-dark mobile-hidden"
+                    id="dropDown">
+                    <img src="../../images/icons/bars-solid-light.svg" width="27.5" hieght="30"
+                        alt="bars for dropdown menu" id="barLight">
+                    <img src="../../images/icons/bars-solid-dark.svg" width="27.5" height="30"
+                        alt="bars for dropdown menu" class="hidden" id="barDark">
+                </button>
+            </div>
+        </nav>
+
+        <!-- mobile dropdown -->
+        <div class="overlay overlay-dark nav-fonts-overlay nav-color-dark mobile-nav-hidden transition" id="mobileNav">
+            <div>
+                <div class="options-overlay">
+                    <button aria-label="Toogle light mode"
+                        class="nav-color-dark nav-hover-dark changeThemeButton changeThemeButton-dark"
+                        id="changeThemeMobile"></button>
+                    <button aria-label="Toggle drop down menu" class="drop-down-icon drop-down-icon-dark" id="dropDown">
+                        <img src="../../images/icons/bars-solid-light.svg" width="27.5" height="30"
+                            alt="bars for dropdown menu" id="barLight">
+                        <img src="../../images/icons/bars-solid-dark.svg" widht="27.5" height="30"
+                            alt="bars for dropdown menu" class="hidden" id="barDark">
+                    </button>
+                </div>
+
+                <div class="overlay-container">
+                    <a href="../../index.html" class="nav-item link-visited-dark nav-hover-dark">About Me</a>
+                    <a href="../../pages/projects.html" class="nav-item nav-hover-dark theme-dark">Projects</a>
+                    <!-- <a class="nav-item link-visited-dark nav-hover-dark">Repositiories</a> -->
+                    <!-- <a class="nav-item link-visited-dark nav-hover-dark">Resume</a> -->
+                    <!-- <a class="nav-item link-visited-dark nav-hover-dark">Blog</a> -->
+                </div>
+            </div>
+        </div>
+        <hr>
+        <!-- Alert for users with big screens -->
+        <p class="big-screen-alert big-screen-alert-dark transition hidden">Your screen size is too big. Some features
+            may not function
+            as intended.</p>
+
+        <!-- Body Content -->
+        <div id="body-content">
+            <button class="top-arrow-dark top-arrow-properties body-dark" aria-label="Jump to top of page?"
+                id="scrollButton"></button>
+
+            <!-- Page classes does not transfer between pages -->
+            <div>
+                <div class="title-container">
+                    <h1 class="hero-main-title">Busy Bites</h1>
+                    <h2 class="hero-sub-title theme-dark">October 2024 - September 2025</h2>
+                </div>
+                <div class="project-body">
+                    <div>
+                        <div class=" project-hero">
+                            <div>
+                                <img class="hero-project-image" src="../../images/projects/busy-bites/Busy_Bites_Home.jpg">
+                                <div class="project-deploy project-deploy-dark">
+                                    <a class="content-body link-visited-dark projects-visited-dark"
+                                    href="https://www.figma.com/design/9Ghr9vIjyRKMtoBVeEAyny/Recipe-Recommendation?node-id=0-1&t=ak0w0DoPYFfijWL5-1">View Design File</a>
+                                </div>
+                            </div>
+                            <h3 class="hero-sub-title project-sub-title">Technologies Used</h3>
+                            <div class="technology-section content-body">
+                                <div>
+                                    <img
+                                        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/electron/electron-original.svg" />
+                                    <h4>Electron</h4>
+                                </div>
+                                <div>
+                                    <img
+                                        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" />
+                                    <h4>React</h4>
+                                </div>
+                                <div>
+                                    <img
+                                        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-plain.svg" />
+                                    <h4>HTML</h4>
+                                </div>
+                                <div>
+                                    <img
+                                        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-plain.svg" />
+                                    <h4>CSS</h4>
+                                </div>
+                                <div>
+                                    <img
+                                        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-plain.svg" />
+                                    <h4>JavaScript</h4>
+                                </div>
+                            </div>
+                            <div class="project-summary">
+                                <h3 class="hero-sub-title project-sub-title">Summary</h3>
+                                <p class="content-body">Created a recipe search desktop application using React and Electron to help busy individuals on a budget find mouthwatering meals. Users can search over 4,000 recipes, filtering by meal type, cookware, ingredients, and time limit. This solves the issue of cooking healthy, time-constrained meals with the ingredients available in your kitchen.</p>
+                            </div>
+                        </div>
+
+                        <div class="format-text project-description content-body">
+                            <h3 class="hero-sub-title project-sub-title">Goals</h3>
+                            <ul>
+                                <li>Create meals easily based on a time limit and ingredient list.</li>
+                                <li>Apply web development skills such as HTML, CSS, and JavaScript to create a responsive application.</li>
+                                <li>Learn and apply the React framework for web development.</li>
+                                <li>Learn how to retrieve data from API calls using GET requests.</li>
+                                <li>Explore options to deploy the application without having to host it on the Internet.</li>
+                            </ul>
+                            <h3 class="hero-sub-title project-sub-title">Constraints</h3>
+                            <ul>
+                                <li>Limited recipe access, as retrieving recipes was often too costly. I didn't have access to a database of free recipes at the time.</li>
+                                <li>Following the terms of service of public websites reduced my ability to scrape recipe websites on the internet.</li>
+                                <li>The reduced timeframe for storing Spoonacular recipe data due to their terms of service.</li>
+                            </ul>
+
+                            <h3 class="hero-sub-title project-sub-title">Details</h3>
+                            <h4 class="project-header-four">Inspiration</h4>
+                            <p>
+                                 Struggling with meal planning during my job search, I wanted a smarter way to find recipes based on ingredients I already had. This project became both a personal solution to meal planning and a way to sharpen my developer skills.
+                            </p>
+
+                            <h4 class="project-header-four">Research</h4>
+                            <p>
+                                I found several sites that let users search recipes by ingredients, but none provided a usable developer API—scraping their data was against their Terms of Service. After researching alternatives, I discovered the Spoonacular Food API, which offered exactly what I needed: a free, scalable way to search recipes programmatically.
+                            </p>
+
+                            <h4 class="project-header-four">Requirements</h4>
+                            <p>
+                                Once I had a way to retrieve recipes from the Spoonacular API, I started outlining my requirements. I wanted users to be able to search and filter recipes by:
+                            </p>
+                            <ul>
+                                <li>Multiple ingredients</li>
+                                <li>Cookware</li>
+                                <li>Total planning time (prep time and cook time)</li>
+                                <li>Category: breakfast, lunch, dinner, or snacks</li>
+                                <li>Dietary restrictions</li>
+                                <li>Type of dish: soups, salads, main courses, and other dishes</li>
+                            </ul>
+
+                            <h4 class="project-header-four">Design</h4>
+                            <p>
+                                Once I had my requirements prepared, it was time to design the application in Figma. I planned out three main screens for the app.  
+                            </p>
+                            
+                            <ul>
+                                <li>Search Recipes page: which included a form where users could enter their search queries. </li>
+                                <li>Recipe Results page: where a list of matching recipes would be displayed for users to browse and choose from.</li>
+                                <li>Recipe Details page: which not only referenced the original recipe source but also laid out the detailed steps users would need to follow in order to cook the dish.</li>
+                            </ul>
+                            <p>
+                                Once I finished designing the three main pages, it was time to design the application logo. I designed it in the form of a clock, with a fork and knife as the clock hands and a plate as the background. This concept perfectly captured the time-sensitive nature of my application, which I named Busy Bites.
+                            </p>
+
+                            <h4 class="project-header-four">Development</h4>
+                            <p>
+                                I developed the core flow of the app in React, starting with a Search page to refine searching for recipes, a Results page capped at eight recipes per query, and a Recipe Details page with step-by-step instructions, summaries, and user reviews. Once this foundation was in place, I integrated Electron to package the app as a desktop application.
+                            </p>
+                            <br>
+                            <div class="image-container">
+                                <figure>
+                                    <img class="project-image-medium" src="../../images/projects/busy-bites/Busy_Bites_Results.jpg" width="500px" height="500px" alt="Recipe search results showing six dishes that include soups, stuffed peppers, seafood gumbo, and pork chops with garlic cream.">
+                                    <figcaption>Recipe search results showing dishes that include soups, stuffed peppers, and seafood gumbo.</figcaption>
+                                </figure>
+                                <figure>
+                                    <img class="project-image-medium" src="../../images/projects/busy-bites/Busy_Bites_Recipe.jpg" width="500px" height="500px" alt="Recipe of Grilled Chicken Gyros with Tzatziki sauce in the Busy Bites application.">
+                                    <figcaption>Detailed recipe of Grilled Chicken Gyros.</figcaption>
+                                </figure>
+                                <!-- <figure>
+                                    <img class="project-image" src="../../images/profile/placeholder_image.jpg" alt="">
+                                    <figcaption>This is a test caption.</figcaption>
+                                </figure> -->
+
+                            </div>
+                                                  
+                            <h3 class="hero-sub-title project-sub-title">Challenges</h3>
+                            <ul>
+                                <li>Studying the React framework for the first time.
+                                </li>
+                                <li>Organizing React components into a clear file structure
+                                </li>
+                                <li>Debugging the integration of React with Electron 
+                                </li>
+                                <li>Understanding how to switch between web-based and Windows file paths
+                                </li>
+                                <li>Learning how to retrieve recipes from the Spoonacular API
+                                </li>
+                                <li>Searching for a reliable and reasonable recipe API
+                                </li>
+                            </ul>
+                            <h3 class="hero-sub-title project-sub-title">Lessons Learned</h3>
+                            <ul>
+                                <li>Sometimes updates in React don’t appear immediately. Recompiling and refreshing the page usually fixes this.
+                                </li>
+                                <li>CSS can unintentionally carry over if imported into multiple React components.
+                                </li>
+                                <li>Modifying or refactoring major features can be time-consuming and requires careful planning.
+                                </li>
+                                <li>A clear and consistent file structure makes React components easier to manage and maintain.
+                                </li>
+                                <li>Regular breaks help maintain focus and prevent burnout during development.
+                                </li>
+                                <li>It’s important to evaluate libraries for long-term support. For example, the create-react-app command is now deprecated.
+                                </li>
+                            </ul>
+                            <h3 class="hero-sub-title project-sub-title">Tags</h3>
+                            <ul class="tag" role="list">
+                                <li>#Web Development</li>
+                                <li>#Web Design</li>
+                                <li>#HTML</li>
+                                <li>#CSS</li>
+                                <li>#JavaScript</li>
+                                <li>#Figma</li>
+                                <li>#React</li>
+                                <li>#Electron</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+        <div class="disclaimer">
+            <p>The use of programming languages, organizational, and technology logos on this site is solely for demonstrating the relevant technologies and complies with the respective brand guidelines. The organizations referenced do not affiliate with, sponsor, or endorse any content, project, or application on this site.</p>
+        </div>
+    </div>
+    <hr>
+    <footer class="footer-text-color">
+        <div class="footer-container">
+            <div class="footer-column">
+                <h3 class="footer-title display-dark">Resources</h3>
+                <ul class="footer-element">
+                    <li class="display-dark">Social Media Icons by fontawesome</li>
+                    <li class="display-dark">Technology Icons by devicon</li>
+                    <li class="display-dark">Hosted with Github Pages</li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h3 class="footer-title display-dark">Social Media</h3>
+                <a class="footer-icon footer-linkedin-icon-dark"
+                    href="https://www.linkedin.com/in/kendarius-james/"></a>
+                <a class="footer-icon footer-github-icon-dark" href="https://github.com/Kendarius-James"></a>
+            </div>
+        </div>
+        <p class="copyright display-dark">@2024 Kendarius James</p>
+    </footer>
+</body>
+
+</html>
